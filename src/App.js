@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-
+import CreazioneCommento from "./Components/CreazioneCommento";
+import "./App.css";
+import CancellazioneCommenti from "./Components/CancellazioneCommenti";
+import AggiornaCommento from "./Components/AggiornaCommento";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CreazioneCommento></CreazioneCommento>
+      <CancellazioneCommenti></CancellazioneCommenti>
+      <AggiornaCommento></AggiornaCommento>
     </div>
   );
 }
