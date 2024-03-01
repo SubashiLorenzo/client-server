@@ -21,9 +21,9 @@ export default function CancellazioneCommenti() {
     <div>
       <h1>CANCELLAZIONE COMMENTI</h1>
 
-      {commenti.map(function (commento) {
+      {commenti.map(function (commento, i) {
         return (
-          <div>
+          <div key={i}>
             <p>{commento.text}</p>
             <button
               onClick={function () {

@@ -28,9 +28,9 @@ export default function AggiornaCommento() {
   return (
     <div>
       <h1>AGGIORNA COMMENTO</h1>
-      {commenti.map(function (commento) {
+      {commenti.map(function (commento, i) {
         return (
-          <div>
+          <div key={i}>
             <input
               type="text"
               value={commento.text}
